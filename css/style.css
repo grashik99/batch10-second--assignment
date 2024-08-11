@@ -1,8 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
+
+/* common style start */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    max-width: 1440px;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+/* common style end */
+/* Shared styles start */
+.display-flex {
+    display: flex;
+}
+
+/* Shared styles end */
+/* nav-bar related style start */
+.header {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: rgb(230, 83, 60);
+    font-size: 2.25em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.nav-items-container {
+    list-style-type: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+
+.nav-item {
+    color: rgb(255, 255, 255);
+    font-size: 1.125em;
+    font-weight: 400;
+    margin: 2px 0px 2px 65px;
+    padding: 8px 20px;
+}
+
+.home-design {
+    background-color: rgb(230, 83, 60);
+    border-radius: 46px;
+    margin-left: 3px;
+}
+.line{
+    display: none;
+}
+
+/* nav-bar related style end */
+/* tablet related responsive start */
+@media screen and (min-width: 430px) and (max-width: 769px) {
+    .body{
+        width: 768px;
+    }
+    .header{
+        width: 100%;
+
+    }
+    .nav-item{
+        margin-left: 5px;
+    }
+}
+/* tablet related responsive end */
+/* mobile related responsive start */
+@media screen and (max-width: 431px) {
+    .header{
+        width: 95%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .line{
+        display: block;
+        width: 40px;
+        margin-right: 6px;
+        line-height: 6px;
+    }
+}
+/* mobile related responsive end */
