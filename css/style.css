@@ -38,10 +38,23 @@ body {
     border: none;
 }
 
+.section-title {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.section-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875em;
+    font-weight: 400;
+}
+
 /* Shared styles end */
 /* nav-bar related style start */
 .header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    margin-bottom: 100px;
 }
 
 .full-container {
@@ -173,7 +186,8 @@ body {
     bottom: 70px;
     left: -110px;
 }
-.rec{
+
+.rec {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -193,8 +207,55 @@ body {
 }
 
 /* hero part related style end */
+/* habit section start */
+.habit {
+    width: 72.5%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.habit-texts {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.habit-texts h1 {
+    margin-bottom: 14px;
+}
+
+.habit-texts p {
+    margin-bottom: 58px;
+}
+.habit-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.habit-card {
+    text-align: center;
+}
+
+.habit-card img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.habit-card-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.habit-card-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875em;
+    font-weight: 400;
+}
+
+/* habit section end */
 /* tablet related responsive start */
-@media screen and (min-width: 540px) and (max-width: 800px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .body {
         width: 768px;
     }
@@ -207,24 +268,31 @@ body {
     .nav-item {
         margin-left: 5px;
     }
-    .hero-part-container{
+
+    .hero-part-container {
         flex-direction: column;
     }
-    .hero-texts{
+
+    .hero-texts {
         width: 90%;
     }
     .hero-image img{
         width: 70%;
+        margin: 0 auto;
     }
-    .i-500{
+
+    .i-500 {
         top: 30px;
         right: 0px;
+    }
+    .habit-card-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* tablet related responsive end */
 /* mobile related responsive start */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 576px) {
     .full-container {
         width: 95%;
     }
@@ -239,14 +307,26 @@ body {
         margin-right: 6px;
         line-height: 6px;
     }
-    .hero-part-container{
+
+    .hero-part-container {
         flex-direction: column;
     }
-    .hero-texts{
+
+    .hero-texts {
         width: 100%;
     }
-    .hero-texts h1{
+
+    .hero-texts h1 {
         font-size: 2.25em;
+    }
+    .i-350{
+        left: -80px;
+    }
+    .section-title{
+        font-size: 2em;
+    }
+    .habit-card-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
