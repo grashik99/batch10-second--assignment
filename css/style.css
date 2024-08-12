@@ -213,6 +213,7 @@ body {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
 .habit-texts {
     text-align: center;
     width: 65%;
@@ -226,11 +227,13 @@ body {
 .habit-texts p {
     margin-bottom: 58px;
 }
-.habit-card-container{
+
+.habit-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
+
 .habit-card {
     text-align: center;
 }
@@ -254,6 +257,40 @@ body {
 }
 
 /* habit section end */
+/* run section related style start */
+.run {
+    width: 74%;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+.run-texts{
+    width: 450px;
+    margin-right: 20px;
+}
+.run-texts h1{
+    margin-bottom: 14px;
+}
+.run-texts p{
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+.join-btn{
+    padding: 16px 80px;
+}
+.run-image{
+    width: 370px;
+    height: 312px;
+}
+.run-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+/* run section related style end */
 /* tablet related responsive start */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .body {
@@ -276,7 +313,8 @@ body {
     .hero-texts {
         width: 90%;
     }
-    .hero-image img{
+
+    .hero-image img {
         width: 70%;
         margin: 0 auto;
     }
@@ -285,7 +323,8 @@ body {
         top: 30px;
         right: 0px;
     }
-    .habit-card-container{
+
+    .habit-card-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -319,14 +358,30 @@ body {
     .hero-texts h1 {
         font-size: 2.25em;
     }
-    .i-350{
+    .i-500{
+        right: -20px;
+    }
+
+    .i-350 {
         left: -80px;
     }
-    .section-title{
+
+    .section-title {
         font-size: 2em;
     }
-    .habit-card-container{
+
+    .habit-card-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .run{
+        flex-direction: column;
+    }
+    .join-btn{
+        margin-bottom: 20px;
+        width: 82vh;
+    }
+    .run-image{
+        width: 82vh;
     }
 }
 
