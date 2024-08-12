@@ -267,30 +267,173 @@ body {
     padding: 30px;
     margin-bottom: 100px;
 }
-.run-texts{
+
+.run-texts {
     width: 450px;
     margin-right: 20px;
 }
-.run-texts h1{
+
+.run-texts h1 {
     margin-bottom: 14px;
 }
-.run-texts p{
+
+.run-texts p {
     margin-bottom: 35px;
     margin-right: 20px;
 }
-.join-btn{
+
+.join-btn {
     padding: 16px 80px;
 }
-.run-image{
+
+.run-image {
     width: 370px;
     height: 312px;
 }
-.run-image img{
+
+.run-image img {
     width: 100%;
     height: 100%;
     border-radius: 18px;
 }
+
 /* run section related style end */
+/* training section start */
+.training-container {
+    width: 74%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+.training-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.training-texts {
+    margin-bottom: 60px;
+    width: 65%;
+}
+
+.training1 {
+    grid-area: training1;
+    background-color: rgba(6, 255, 210, 0.5);
+    position: relative;
+}
+
+.training-description1 {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.training2 {
+    grid-area: training2;
+    background-color: rgba(255, 0, 0, 0.3);
+    position: relative;
+}
+.training-description2 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.training3 {
+    grid-area: training3;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.training-description3 {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.training4 {
+    grid-area: training4;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.training-description4 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.training5 {
+    grid-area: training5;
+    background-color: rgba(66, 255, 0, 0.3);
+    position: relative;
+}
+.training-description5 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.training6 {
+    grid-area: training6;
+    background-color: rgba(0, 71, 255, 0.3);
+    position: relative;
+}
+.training-description6 {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    color: rgb(255, 255, 255);
+    font-size: .875em;
+    font-weight: 500;
+}
+
+.training1 img {
+    opacity: 50%;
+}
+
+.training2 img {
+    opacity: 50%;
+}
+
+.training3 img {
+    opacity: 50%;
+}
+
+.training4 img {
+    opacity: 50%;
+}
+
+.training5 img {
+    opacity: 50%;
+}
+
+.training6 img {
+    opacity: 50%;
+}
+
+.training-images-container {
+    display: grid;
+    grid-template-areas:
+        'training1 training1 training2 training2 training2 training2 training2 training3 training3'
+        'training4 training4 training4 training5 training5 training5 training6 training6 training6'
+    ;
+}
+
+/* training section end */
 /* tablet related responsive start */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .body {
@@ -327,6 +470,11 @@ body {
     .habit-card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .run,
+    .training-container,
+    .habit{
+        width: 90%;
+    }
 }
 
 /* tablet related responsive end */
@@ -358,7 +506,8 @@ body {
     .hero-texts h1 {
         font-size: 2.25em;
     }
-    .i-500{
+
+    .i-500 {
         right: -20px;
     }
 
@@ -373,16 +522,38 @@ body {
     .habit-card-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .run{
+
+    .run {
         flex-direction: column;
     }
-    .join-btn{
+
+    .join-btn {
         margin-bottom: 20px;
-        width: 82vh;
+        width: auto;
     }
-    .run-image{
-        width: 82vh;
+
+    .run-image {
+        width: auto;
     }
+
+    .run-texts {
+        width: auto;
+    }
+
+    .join-btn {
+        width: 100%;
+    }
+    .training-images-container{
+        grid-template-areas:
+        'training1 training1 training1 training2 training2 training2'
+        'training4 training4 training4 training5 training5 training5'
+    ;
+    }
+    .training3,
+    .training6{
+        display: none;
+    }
+
 }
 
 /* mobile related responsive end */
