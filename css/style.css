@@ -672,6 +672,7 @@ option {
 .service {
     width: 75%;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
 .service-container {
