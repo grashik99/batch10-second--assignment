@@ -668,6 +668,53 @@ option {
 }
 
 /* footer related style end */
+/* service section design start */
+.service {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service-texts {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(32, 35, 32);
+    box-sizing: border-box;
+}
+
+.logo {
+    color: white;
+    margin: 10px 0px;
+}
+
+.service-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgb(209, 107, 107);
+    margin-bottom: 20px;
+}
+.service-description{
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: justify;
+}
+
 /* tablet related responsive start */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .body {
@@ -738,6 +785,15 @@ option {
 
     .middle-right-container {
         width: 80%;
+    }
+    .service{
+        width: 90%;
+    }
+    .service-texts{
+        width: 90%;
+    }
+    .service-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -874,12 +930,23 @@ option {
     .br {
         display: none;
     }
-    .footer-text-container{
+
+    .footer-text-container {
         flex-direction: column;
     }
-    .middle-right-container{
+
+    .middle-right-container {
         flex-direction: column;
         margin-top: 20px;
+    }
+    .service{
+        width: 90%;
+    }
+    .service-texts{
+        width: 90%;
+    }
+    .service-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
