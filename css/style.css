@@ -599,6 +599,75 @@ option {
 
 
 /* Calculator related style end */
+/* footer related style start */
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    width: auto;
+}
+
+.footer-text-container {
+    width: 73%;
+    margin: auto;
+    padding: 66px 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.left-text-container {
+    width: 50%;
+    padding-right: 60px;
+}
+
+.footer-title {
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    font-size: 4.375em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.middle-right-container {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.get {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.middle-text-container ul {
+    list-style: none;
+}
+
+.right-text-container ul {
+    list-style: none;
+}
+
+.middle-text-container li {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.right-text-container li {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.copy {
+    text-align: center;
+    padding: 36px 0px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+/* footer related style end */
 /* tablet related responsive start */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .body {
@@ -656,6 +725,20 @@ option {
     .main-calculator {
         width: 100%;
     }
+
+    .footer-text-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-text-container {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    .middle-right-container {
+        width: 80%;
+    }
 }
 
 /* tablet related responsive end */
@@ -664,7 +747,8 @@ option {
     .full-container {
         width: 95%;
     }
-    .header{
+
+    .header {
         width: 95%;
     }
 
@@ -715,7 +799,7 @@ option {
         margin-bottom: 20px;
         width: auto;
     }
-    
+
 
     .run-image {
         width: auto;
@@ -741,7 +825,7 @@ option {
         display: none;
     }
 
-    
+
     .habit {
         width: 90%;
     }
@@ -776,18 +860,28 @@ option {
     .trainer-card:nth-child(5) {
         grid-row: 2;
     }
+
     .trainer-texts,
     .training-texts,
-    .habit-texts{
+    .habit-texts {
         width: 100%;
     }
-    .bmi-texts{
+
+    .bmi-texts {
         width: 90%;
     }
-    .br{
+
+    .br {
         display: none;
     }
-   
+    .footer-text-container{
+        flex-direction: column;
+    }
+    .middle-right-container{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
 }
 
 
