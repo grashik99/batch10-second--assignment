@@ -500,7 +500,7 @@ body {
 
 .inputs-width {
     box-sizing: border-box;
-    width: calc( 50% - 12px);
+    width: calc(50% - 12px);
     margin: 6px;
     padding: 13px;
     border-radius: 8px;
@@ -510,9 +510,10 @@ body {
     font-weight: 400;
     border: none;
 }
-.active{
+
+.active {
     box-sizing: border-box;
-    width: calc( 100% - 12px);
+    width: calc(100% - 12px);
     margin: 6px;
     padding: 13px;
     border-radius: 8px;
@@ -522,21 +523,79 @@ body {
     font-weight: 400;
     border: none;
 }
-option{
+
+option {
     background: rgba(255, 255, 255, 0.1);
 }
-.main-calculator h3,p,button{
+
+.main-calculator h3,
+p,
+button {
     margin: 0 6px;
 }
-option{
+
+option {
     background-color: black;
     color: white;
 }
-.calculator-btn{
+
+.calculator-btn {
     margin-top: 34px;
 }
 
+.trainer-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
 
+.trainer-texts {
+    width: 63%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.trainer-texts h1 {
+    margin-bottom: 14px;
+}
+
+.trainer-images-container {
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trainer-card {
+    position: relative;
+}
+
+.trainer-image {
+    width: 100%;
+    opacity: 80%;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2), url(image);
+}
+
+.trainer-name {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+}
+
+.trainer-deg {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875em;
+    font-weight: 400;
+}
 
 
 /* Calculator related style end */
@@ -579,18 +638,22 @@ option{
 
     .run,
     .training-container,
-    .habit {
+    .habit,
+    .trainer-container {
         width: 90%;
     }
-    .calculator-container{
+
+    .calculator-container {
         flex-direction: column;
         padding: 50px 30px;
     }
-    .chart{
+
+    .chart {
         width: 100%;
         margin-bottom: 30px;
     }
-    .main-calculator{
+
+    .main-calculator {
         width: 100%;
     }
 }
@@ -599,6 +662,9 @@ option{
 /* mobile related responsive start */
 @media screen and (max-width: 576px) {
     .full-container {
+        width: 95%;
+    }
+    .header{
         width: 95%;
     }
 
@@ -649,6 +715,7 @@ option{
         margin-bottom: 20px;
         width: auto;
     }
+    
 
     .run-image {
         width: auto;
@@ -674,23 +741,54 @@ option{
         display: none;
     }
 
-    .run,
-    .training-container,
+    
     .habit {
         width: 90%;
     }
-    .calculator-container{
+
+    .calculator-container {
         flex-direction: column;
         padding: 50px 30px;
     }
-    .chart{
+
+    .chart {
         width: 100%;
         margin-bottom: 30px;
     }
-    .main-calculator{
-        width: 100%;
+
+    .main-calculator {
+        width: 90%;
     }
 
+    .trainer-images-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .trainer-card:nth-child(1) {
+        display: none;
+    }
+
+    .trainer-card:nth-child(4) {
+        display: none;
+    }
+
+    .trainer-card:nth-child(5) {
+        grid-row: 2;
+    }
+    .trainer-texts,
+    .training-texts,
+    .habit-texts{
+        width: 100%;
+    }
+    .bmi-texts{
+        width: 90%;
+    }
+    .br{
+        display: none;
+    }
+   
 }
+
 
 /* mobile related responsive end */
