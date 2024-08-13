@@ -336,6 +336,7 @@ body {
     background-color: rgba(255, 0, 0, 0.3);
     position: relative;
 }
+
 .training-description2 {
     position: absolute;
     top: 15px;
@@ -350,6 +351,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
+
 .training-description3 {
     position: absolute;
     bottom: 40px;
@@ -364,6 +366,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
+
 .training-description4 {
     position: absolute;
     top: 15px;
@@ -378,6 +381,7 @@ body {
     background-color: rgba(66, 255, 0, 0.3);
     position: relative;
 }
+
 .training-description5 {
     position: absolute;
     bottom: 15px;
@@ -392,6 +396,7 @@ body {
     background-color: rgba(0, 71, 255, 0.3);
     position: relative;
 }
+
 .training-description6 {
     position: absolute;
     bottom: 40px;
@@ -434,6 +439,107 @@ body {
 }
 
 /* training section end */
+/* Calculator related style start */
+.bmi-calculator-container {
+    margin-bottom: 100px;
+}
+
+.bmi-texts {
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.calculator-container {
+    background: rgb(34, 34, 34);
+    padding: 50px 190px;
+    justify-content: space-between;
+}
+
+.bmi-calculator-container .sub-title {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.chart {
+    width: 40%;
+    text-align: left;
+}
+
+.chart table {
+    margin-top: 38px;
+}
+
+.chart th {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+
+}
+
+.chart td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875em;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+}
+
+.main-calculator {
+    width: 55%;
+}
+
+.main-calculator-2 {
+    margin-top: 34px;
+    width: 100%;
+}
+
+.inputs-width {
+    box-sizing: border-box;
+    width: calc( 50% - 12px);
+    margin: 6px;
+    padding: 13px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+}
+.active{
+    box-sizing: border-box;
+    width: calc( 100% - 12px);
+    margin: 6px;
+    padding: 13px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+}
+option{
+    background: rgba(255, 255, 255, 0.1);
+}
+.main-calculator h3,p,button{
+    margin: 0 6px;
+}
+option{
+    background-color: black;
+    color: white;
+}
+.calculator-btn{
+    margin-top: 34px;
+}
+
+
+
+
+/* Calculator related style end */
 /* tablet related responsive start */
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .body {
@@ -470,10 +576,22 @@ body {
     .habit-card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .run,
     .training-container,
-    .habit{
+    .habit {
         width: 90%;
+    }
+    .calculator-container{
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+    .chart{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-calculator{
+        width: 100%;
     }
 }
 
@@ -543,15 +661,34 @@ body {
     .join-btn {
         width: 100%;
     }
-    .training-images-container{
+
+    .training-images-container {
         grid-template-areas:
-        'training1 training1 training1 training2 training2 training2'
-        'training4 training4 training4 training5 training5 training5'
-    ;
+            'training1 training1 training1 training2 training2 training2'
+            'training4 training4 training4 training5 training5 training5'
+        ;
     }
+
     .training3,
-    .training6{
+    .training6 {
         display: none;
+    }
+
+    .run,
+    .training-container,
+    .habit {
+        width: 90%;
+    }
+    .calculator-container{
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+    .chart{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-calculator{
+        width: 100%;
     }
 
 }
